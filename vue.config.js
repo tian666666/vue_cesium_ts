@@ -40,27 +40,8 @@ module.exports = {
       new CopyWebpackPlugin({
         patterns: [
           {
-            from: 'node_modules/cesium/Build/Cesium/Workers',
-            to: 'cesium/Workers',
-          },
-        ],
-      }),
-      new CopyWebpackPlugin({
-        patterns: [
-          {
-            from: 'node_modules/cesium/Build/Cesium/ThirdParty',
-            to: 'cesium/ThirdParty',
-          },
-        ],
-      }),
-      new CopyWebpackPlugin({
-        patterns: [{ from: 'node_modules/cesium/Build/Cesium/Assets', to: 'cesium/Assets' }],
-      }),
-      new CopyWebpackPlugin({
-        patterns: [
-          {
-            from: 'node_modules/cesium/Build/Cesium/Widgets',
-            to: 'cesium/Widgets',
+            from: 'node_modules/cesium/Build/Cesium',
+            to: 'cesium',
           },
         ],
       }),
